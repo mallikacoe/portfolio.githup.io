@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html>
-<header><title>Portfolio</title></header>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="style.css" /> 
-<!-- The Timeline -->
-
-<ul class="timeline">
-
-	<!-- Item 1 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">Freelancer</span>
-				<span class="time-wrapper"><span class="time">2013 - present</span></span>
-			</div>
-			<div class="desc">My current employment. Way better than the position before!</div>
-		</div>
-	</li>
-  
-	<!-- Item 2 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">Apple Inc.</span>
-				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-			</div>
-			<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-		</div>
-	</li>
-
-	<!-- Item 3 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">Harvard University</span>
-				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-			</div>
-			<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
-		</div>
-	</li>
-  
-</ul>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulma Navigation Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+      
+  </head>
+  <body>
+    <nav class="navbar is-white">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#" style="font-weight:bold;">
+            MALLIKA
+          </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navMenu" class="navbar-menu ">
+          <div class="navbar-end">
+            <a href="#" class="navbar-item">Home</a>
+            <a href="#" class="navbar-item">Blog</a>
+            <a href="#" class="navbar-item">Forum</a>
+            <a href="#" class="navbar-item">Shop</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script type="text/javascript">
+      (function() {
+        var burger = document.querySelector('.burger');
+        var nav = document.querySelector('#'+burger.dataset.target);
+        burger.addEventListener('click', function(){
+          burger.classList.toggle('is-active');
+          nav.classList.toggle('is-active');
+        });
+      })();
+    </script>
+  </body>
 </html>
