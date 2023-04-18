@@ -1,38 +1,220 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bulma Navigation Tutorial</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>MALLIKA CV</title>
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"> -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-      
   </head>
   <body>
-    <nav class="navbar is-white">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#" style="font-weight:bold;">
-            MALLIKA
-          </a>
-          <span class="navbar-burger burger" data-target="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/mai-s.jpg"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Mallika.S</span>
         </div>
-        <div id="navMenu" class="navbar-menu ">
-          <div class="navbar-end">
-            <a href="#" class="navbar-item">Home</a>
-            <a href="#" class="navbar-item">Blog</a>
-            <a href="#" class="navbar-item">Forum</a>
-            <a href="#" class="navbar-item">Shop</a>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
           </div>
         </div>
       </div>
-    </nav>
-    <script type="text/javascript">
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hi!, My name is Mallika Somporn</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#about" class="btn btn--bg"> >_< </a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/yt-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="#"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            I am a skilled DevSecOps professional with experience in developing and maintaining 
+            digital solutions for clients. I collaborate with cross-functional teams, 
+            continuously improve systems using CI/CD pipeline, and automate security testing at scale
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>Mallika Somporn</strong>
+                and I'm a <strong> DevSecOps </strong> located in
+                Bangkok, Thailand. I am a highly skilled IT professional with expertise in
+                <strong> cloud computing </strong>
+                such as GCP, AWS. I have experience in <strong>infrastructure as code</strong> using tools
+                such as Terraform
+              </p>
+              <p class="about__content-details-para">
+                I am passionate about learning, respecting, and challenging my peers. Feel free to
+                <strong>contact</strong> me here.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">GCP</div>
+              <div class="skills__skill">AWS</div>
+              <div class="skills__skill">Terraform</div>
+              <div class="skills__skill">Vault</div>
+              <div class="skills__skill">GCP</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">Security</div>
+              <div class="skills__skill">GitLab</div>
+              <div class="skills__skill">CI/CD</div>
+              <div class="skills__skill">O365</div>
+              <div class="skills__skill">Jira</div>
+              <div class="skills__skill">PHP</div>
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">C++</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Mallika Somporn</h4>
+            <p class="main-footer__short-desc">
+                I am passionate about learning new technologies and collaborating with colleagues in design, 
+                product, and engineering. My ultimate objective is to become a skilled and versatile developer 
+                who can make a valuable contribution to a growing team
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+<!--     <script type="text/javascript">
       (function() {
         var burger = document.querySelector('.burger');
         var nav = document.querySelector('#'+burger.dataset.target);
@@ -41,6 +223,7 @@
           nav.classList.toggle('is-active');
         });
       })();
-    </script>
+    </script> -->
   </body>
+    
 </html>
